@@ -1,0 +1,7 @@
+<script>
+					function vibrate(){
+						if(navigator){
+							navigator.vibrate([100])
+						}
+					}
+				</script>
