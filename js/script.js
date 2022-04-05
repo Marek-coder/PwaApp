@@ -9,13 +9,15 @@ function geoFindMe() {
     mapLink.textContent = '';
   
     function success(position) {
-      const watchId = navigator.geolocation.watchPosition(position => {
-        const { latitude, longitude } = position.coords;
-        var mapOptions = {
-          center: [latitude, longitude],
-          zoom: 15
-       }
-           // Creating a map object
+      const latitude  = position.coords.latitude;
+      const longitude = position.coords.longitude;
+  
+      var mapOptions = {
+        center: [latitude, longitude],
+        zoom: 15
+     }
+     
+     // Creating a map object
      var map = new L.map('map', mapOptions);
      
      // Creating a Layer object
@@ -24,8 +26,6 @@ function geoFindMe() {
      // Adding layer to the map
      map.addLayer(layer);
       // container.innerHTML = output
-      
-      });
 
     }
   
