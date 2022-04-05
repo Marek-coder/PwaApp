@@ -20,24 +20,17 @@
       <div class="row">
          <div class="col-sm-6">
           <button  onclick="window.location.href='index3.html'" id="vibrate" type="button" class="btn btn-secondary">Wibruj</button>
-          </div>
-	      <script>
+          </div> 
+                <div class="col-sm-6">
+					<button class="btn btn-secondary" id="vibrate" onclick="vibrate()">SOS</button>
+                </div>
+				<script>
 					function vibrate(){
 						if(navigator){
 							navigator.vibrate([20,20,20,100,100,100,20,20,20])
 						}
 					}
-		</script> 
-                <!--<div class="text-center mt-4">
-					<button class="btn btn-xl btn-outline-light" id="vibrate" onclick="vibrate()">S-O-S</button>
-                </div>
-				<script>
-					function vibrate(){
-						if(navigator){
-							navigator.vibrate([100,30,100,30,100,30,200,30,200,30,200,30,100,30,100,30,100])
-						}
-					}
-				</script>-->
+				</script>
 	
         
         <div class="col-sm-6">
