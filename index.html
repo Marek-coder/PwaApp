@@ -24,14 +24,14 @@
                   <div class="text-center">
                     <button onclick="window.location.href='index3.html'" id="vibrate" onclick="vibrate()" class="btn btn-success" type="submit">SOS</button>
                   </div>
+                  <script>
+                    function vibrate(){
+                      if(navigator){
+                        navigator.vibrate([20,20,20,100,100,100,20,20,20])
+                      }
+                    }
+                  </script>
                 </div>
-				<script>
-					function vibrate(){
-						if(navigator){
-							navigator.vibrate([20,20,20,100,100,100,20,20,20])
-						}
-					}
-				</script>
 	
         
         <div class="col-sm-6">
