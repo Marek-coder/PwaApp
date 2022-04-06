@@ -1,7 +1,7 @@
 {
     "name": "Pwa Application",
     "short_name": "Pwa App",
-    "start_url": "index2.html",
+    "start_url": "https://marek-coder.github.io/PwaApp/",
     "display": "standalone",
     "background_color": "#fdfdfd",
     "theme_color": "#db4938",
