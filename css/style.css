@@ -40,3 +40,9 @@ h1 {
     padding: 6px 18px;
 }
 #map { height: 580px; }
+
+.btn {
+  width: 150px;
+  height:50px;
+  margin-top: 20px;
+}
