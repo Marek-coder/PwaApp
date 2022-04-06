@@ -2,19 +2,10 @@
 const container = document.querySelector(".container#map")
 
 function geoFindMe() {
-
-        const status = document.querySelector('#status');
-        const mapLink = document.querySelector('#map-link');
+  
       
-        mapLink.href = '';
-        mapLink.textContent = '';
-      
-        function success(position) {
-          const status = document.querySelector('#status');
-          const mapLink = document.querySelector('#map-link');
-      
-          mapLink.href = '';
-          mapLink.textContent = '';
+        function success(position) {     
+   
           const latitude  = position.coords.latitude;
           const longitude = position.coords.longitude;
 
