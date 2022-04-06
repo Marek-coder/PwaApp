@@ -18,10 +18,20 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-sm-6">
-          <button  onclick="window.location.href='index3.html'" id = "vibrateButton" type="button" class="btn btn-secondary">Wibruj</button>
 
-        </div>
+          </div> 
+                <div class="col-sm-6">
+					<button class="btn btn-secondary" id="vibrate" onclick="vibrate()">SOS</button>
+                </div>
+				<script>
+					function vibrate(){
+						if(navigator){
+							navigator.vibrate([20,20,20,100,100,100,20,20,20])
+						}
+					}
+				</script>
+	
+        
         <div class="col-sm-6">
           <button  onclick="window.location.href='index2.html'" type="button" class="btn btn-secondary">Pokaż lokalizację</button>
           <!-- <a href="index2.html" class="btn btn-secondary">Try it Yourself »</a> -->
